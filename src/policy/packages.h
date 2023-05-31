@@ -16,8 +16,7 @@
 /** Default maximum number of transactions in a package. */
 static constexpr uint32_t MAX_PACKAGE_COUNT{25};
 /** Default maximum total virtual size of transactions in a package in KvB. */
-static constexpr uint32_t MAX_PACKAGE_SIZE{101};
-static_assert(MAX_PACKAGE_SIZE * WITNESS_SCALE_FACTOR * 1000 >= MAX_STANDARD_TX_WEIGHT);
+static constexpr uint32_t MAX_PACKAGE_SIZE{404};
 
 // If a package is submitted, it must be within the mempool's ancestor/descendant limits. Since a
 // submitted package must be child-with-unconfirmed-parents (all of the transactions are an ancestor
